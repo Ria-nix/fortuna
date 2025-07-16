@@ -1,11 +1,12 @@
+
 @font-face {
     font-display: swap;
     font-family: source-sans-pro;
     font-style: normal;
     font-weight: 400;
     src: local("Source Sans Pro Regular"), local("SourceSansPro-Regular"),
-        url("sourcesanspro-regular.woff2") format("woff2"),
-        url("sourcesanspro-regular.woff") format("woff");
+        url("./fonts/sourcesanspro/sourcesanspro-regular.woff2") format("woff2"),
+        url("./fonts/sourcesanspro/sourcesanspro-regular.woff") format("woff");
 }
 
 @font-face {
@@ -14,8 +15,8 @@
     font-style: normal;
     font-weight: 600;
     src: local("Source Sans Pro SemiBold"), local("SourceSansPro-SemiBold"),
-        url("sourcesanspro-semibold.woff2") format("woff2"),
-        url("sourcesanspro-semibold.woff") format("woff");
+        url("./fonts/sourcesanspro/sourcesanspro-semibold.woff2") format("woff2"),
+        url("./fonts/sourcesanspro/sourcesanspro-semibold.woff") format("woff");
 }
 
 #fh {
