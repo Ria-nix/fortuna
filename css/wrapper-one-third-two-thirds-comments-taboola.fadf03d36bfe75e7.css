@@ -1,1 +1,48 @@
-@keyframes swing{0%{transform:rotate(0deg)}20%{transform:rotate(15deg)}40%{transform:rotate(-15deg)}60%{transform:rotate(10deg)}80%{transform:rotate(-5deg)}to{transform:rotate(0deg)}}.fig-wrapper-flex-column--comments-taboola{margin-bottom:32px;margin-top:32px}.fig-wrapper-flex-column--comments-taboola .fig-wrapper-flex-column__1-of-3>:first-child,.fig-wrapper-flex-column--comments-taboola .fig-wrapper-flex-column__2-of-3>:first-child,.fig-wrapper-flex-column--comments-taboola>:first-child{margin-top:0;padding-top:0}.fig-wrapper-flex-column--comments-taboola .fig-wrapper-flex-column__1-of-3>:last-child,.fig-wrapper-flex-column--comments-taboola .fig-wrapper-flex-column__2-of-3>:last-child,.fig-wrapper-flex-column--comments-taboola>:last-child{margin-bottom:0;padding-bottom:0}.fig-wrapper-flex-column--comments-taboola .fig-wrapper-flex-column__1-of-3.fig-wrapper-flex-column__fixed-size{display:block}
+@keyframes swing {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(15deg);
+    }
+    40% {
+        transform: rotate(-15deg);
+    }
+    60% {
+        transform: rotate(10deg);
+    }
+    80% {
+        transform: rotate(-5deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+.fig-wrapper-flex-column--comments-taboola {
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+.fig-wrapper-flex-column--comments-taboola
+    .fig-wrapper-flex-column__1-of-3
+    > :first-child,
+.fig-wrapper-flex-column--comments-taboola
+    .fig-wrapper-flex-column__2-of-3
+    > :first-child,
+.fig-wrapper-flex-column--comments-taboola > :first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+.fig-wrapper-flex-column--comments-taboola
+    .fig-wrapper-flex-column__1-of-3
+    > :last-child,
+.fig-wrapper-flex-column--comments-taboola
+    .fig-wrapper-flex-column__2-of-3
+    > :last-child,
+.fig-wrapper-flex-column--comments-taboola > :last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.fig-wrapper-flex-column--comments-taboola
+    .fig-wrapper-flex-column__1-of-3.fig-wrapper-flex-column__fixed-size {
+    display: block;
+}

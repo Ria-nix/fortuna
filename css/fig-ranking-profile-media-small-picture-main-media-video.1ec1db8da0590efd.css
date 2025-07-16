@@ -1,1 +1,57 @@
-@keyframes swing{0%{transform:rotate(0deg)}20%{transform:rotate(15deg)}40%{transform:rotate(-15deg)}60%{transform:rotate(10deg)}80%{transform:rotate(-5deg)}to{transform:rotate(0deg)}}.fig-ranking-profile-small-picture .fig-ranking-profile-main-media-video{float:right;margin-left:8px;max-width:120px;width:100%}@media(min-width:48em){.fig-ranking-profile-small-picture .fig-ranking-profile-main-media-video{margin-left:16px}}@media(min-width:48em)and (max-width:63.99em){.fig-ranking-profile-small-picture .fig-ranking-profile-main-media-video{max-width:282px}}@media(min-width:64em){.fig-ranking-profile-small-picture .fig-ranking-profile-main-media-video{max-width:224px}}@media(max-width:47.99em){.fig-ranking-profile-small-picture .fig-ranking-profile-main-media-video:before{bottom:8px;height:24px;left:8px;width:24px}.fig-ranking-profile-small-picture .fig-ranking-profile-main-media-video__svg{bottom:12px;height:16px;left:13px;width:16px}}
+@keyframes swing {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(15deg);
+    }
+    40% {
+        transform: rotate(-15deg);
+    }
+    60% {
+        transform: rotate(10deg);
+    }
+    80% {
+        transform: rotate(-5deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+.fig-ranking-profile-small-picture .fig-ranking-profile-main-media-video {
+    float: right;
+    margin-left: 8px;
+    max-width: 120px;
+    width: 100%;
+}
+@media (min-width: 48em) {
+    .fig-ranking-profile-small-picture .fig-ranking-profile-main-media-video {
+        margin-left: 16px;
+    }
+}
+@media (min-width: 48em) and (max-width: 63.99em) {
+    .fig-ranking-profile-small-picture .fig-ranking-profile-main-media-video {
+        max-width: 282px;
+    }
+}
+@media (min-width: 64em) {
+    .fig-ranking-profile-small-picture .fig-ranking-profile-main-media-video {
+        max-width: 224px;
+    }
+}
+@media (max-width: 47.99em) {
+    .fig-ranking-profile-small-picture
+        .fig-ranking-profile-main-media-video:before {
+        bottom: 8px;
+        height: 24px;
+        left: 8px;
+        width: 24px;
+    }
+    .fig-ranking-profile-small-picture
+        .fig-ranking-profile-main-media-video__svg {
+        bottom: 12px;
+        height: 16px;
+        left: 13px;
+        width: 16px;
+    }
+}
