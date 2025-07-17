@@ -51,15 +51,9 @@
     <meta property="og:image:alt" content="Emmanuel Macron a atterri à 8h15 heure locale de Mamoudzou.">
     <meta property="article:published_time" content="2025-04-21T07:32:49+02:00">
     <meta property="article:modified_time" content="2025-04-21T08:03:21+02:00">
-    <meta http-equiv="origin-trial"
-        content="A+uXoByCfR5HCRAl94AWMQ8Y7DHd3670DSOPWj55vVOoaN/cUpF/r0yk6KbxjLIyaxJ2H3/YX4ZxkiI3srY5oQwAAABreyJvcmlnaW4iOiJodHRwczovL2Nkbi50YWJvb2xhLmNvbTo0NDMiLCJmZWF0dXJlIjoiU2NoZWR1bGVyWWllbGQiLCJleHBpcnkiOjE3MDk2ODMxOTksImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-config" content="/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-
-    <noscript>
-        <meta http-equiv="refresh" content="500">
-    </noscript>
 
     <link type="font/woff2" href="https://static.lefigaro.fr/common/fonts/SourceSansPro/sourcesanspro-semibold.woff2">
     <link type="font/woff2" href="https://static.lefigaro.fr/common/fonts/SourceSansPro/sourcesanspro-regular.woff2">
@@ -877,7 +871,8 @@
                                             <time datetime="2025-04-21T07:32:49+02:00">
                                                 le 21 avril 2025 à 07h32</time>, </span>
                                         <span class="fig-content-metas__pub-maj-date"> mis à jour <time
-                                                datetime="2025-04-21T08:03:21+02:00">le 21 avril 2025 à 08h03</time>
+                                                datetime="2025-04-21T08:03:21+02:00"><span
+                                                    id="fecha-ayer"></span></time>
                                         </span>
                                     </div>
 
@@ -1147,9 +1142,9 @@
                                         class="fig-media-photo fig-img fig-img--complete"
                                         alt="Emmanuel Macron a atterri à 8h15 heure locale de Mamoudzou."
                                         fetchpriority="low" height="2001" width="3000"
-                                        srcset="e6fdcb004b40e6112c410ac8e2f4e0c75cb04f55d941abf3d3f267f9fd362f48.webp 414w, e6fdcb004b40e6112c410ac8e2f4e0c75cb04f55d941abf3d3f267f9fd362f48-1.webp 616w, e6fdcb004b40e6112c410ac8e2f4e0c75cb04f55d941abf3d3f267f9fd362f48-2.webp 704w">
+                                        srcset="./image/e6fdcb004b40e6112c410ac8e2f4e0c75cb04f55d941abf3d3f267f9fd362f48.webp 414w, ./image/e6fdcb004b40e6112c410ac8e2f4e0c75cb04f55d941abf3d3f267f9fd362f48-1.webp 616w, ./image/e6fdcb004b40e6112c410ac8e2f4e0c75cb04f55d941abf3d3f267f9fd362f48-2.webp 704w">
                                     <noscript>
-                                        <img srcset="e6fdcb004b40e6112c410ac8e2f4e0c75cb04f55d941abf3d3f267f9fd362f48.webp 414w, e6fdcb004b40e6112c410ac8e2f4e0c75cb04f55d941abf3d3f267f9fd362f48-1.webp 616w, e6fdcb004b40e6112c410ac8e2f4e0c75cb04f55d941abf3d3f267f9fd362f48-2.webp 704w"
+                                        <img srcset="./image/e6fdcb004b40e6112c410ac8e2f4e0c75cb04f55d941abf3d3f267f9fd362f48.webp 414w, ./image/e6fdcb004b40e6112c410ac8e2f4e0c75cb04f55d941abf3d3f267f9fd362f48-1.webp 616w, ./image/e6fdcb004b40e6112c410ac8e2f4e0c75cb04f55d941abf3d3f267f9fd362f48-2.webp 704w"
                                             sizes="(min-width: 64em) 616px, (min-width: 48em) and (max-width: 63.99em) 704px, 100vw"
                                             class="fig-media-photo fig-img fig-img--complete"
                                             alt="Emmanuel Macron a atterri à 8h15 heure locale de Mamoudzou."
@@ -1223,7 +1218,7 @@
                                     ensuite dans</strong> le département voisin de La
                                 Réunion, puis à Madagascar et Maurice.
                             </p>
-                            <h2 class="fig-heading"><b>Внимание! Была найдена собака!</b></h2>
+                            <h2 class="fig-heading"><b>Attention ! Un chien a été retrouvé !</b></h2>
                             <br>
                             <span class="fig-wrap-img"><img src="./image/dbb61ff5906c69819f9fbfd42c690efa.webp"
                                     alt="taksa"></span>
@@ -1272,11 +1267,12 @@
         </div>
         <div id="tabbar" class="fig-tabbar video-sticky-limit">
             <div class="fig-tabbar__inner">
+
                 <div class="fig-progress-bar video-sticky-limit" data-module="progress-bar" data-context="was @visible"
                     data-page-type="NewsFlash" data-mrf-recirculation="progress-bar">
                     <div role="progressbar" aria-label="Progression de la lecture de l'article " aria-busy="false"
                         aria-valuenow="1" aria-valuemin="0" aria-valuemax="100" class="fig-progress-bar__bar">
-                        <div class="fig-progress-bar__filler" style="width: 1%;"></div>
+                        <div class="fig-progress-bar__filler" style="width: 1%;" id="myBar"></div>
                     </div>
                 </div>
                 <p class="fig-headline-tabbar">
@@ -1642,12 +1638,14 @@
                                                 sizes="(min-width: 64em) 224px, (min-width: 48em) 282px, 120px"
                                                 class="fig-img fig-ranking-profile-media-small-picture__photo"
                                                 alt="Crise avec l’Algérie&nbsp;: la ligne Retailleau s’impose à Macron"
-                                                height="2001" width="3000"><noscript><img
-                                                    srcset="e8c16f8e8a08eb400a4ed8d74b7218e90821b1ad0a6cfec050f7c9bd98f87b8c.webp 120w, e8c16f8e8a08eb400a4ed8d74b7218e90821b1ad0a6cfec050f7c9bd98f87b8c-1.webp 224w, e8c16f8e8a08eb400a4ed8d74b7218e90821b1ad0a6cfec050f7c9bd98f87b8c-2.webp 282w"
+                                                height="2001" width="3000">
+                                            <noscript>
+                                                <img srcset="./image/e8c16f8e8a08eb400a4ed8d74b7218e90821b1ad0a6cfec050f7c9bd98f87b8c.webp 120w, ./image/e8c16f8e8a08eb400a4ed8d74b7218e90821b1ad0a6cfec050f7c9bd98f87b8c-1.webp 224w, ./image/e8c16f8e8a08eb400a4ed8d74b7218e90821b1ad0a6cfec050f7c9bd98f87b8c-2.webp 282w"
                                                     sizes="(min-width: 64em) 224px, (min-width: 48em) 282px, 120px"
                                                     class="fig-img--complete fig-img fig-ranking-profile-media-small-picture__photo"
                                                     alt="Crise avec l’Algérie&nbsp;: la ligne Retailleau s’impose à Macron"
-                                                    height="2001" width="3000"></noscript></div>
+                                                    height="2001" width="3000"></noscript>
+                                        </div>
                                     </figure>
                                     <p class="fig-ranking-profile-standfirst">
                                         <strong>DÉCRYPTAGE </strong>- Après le renvoi de 12 agents consulaires algériens
@@ -1676,12 +1674,16 @@
                                                     sizes="(min-width: 64em) 224px, (min-width: 48em) 282px, 120px"
                                                     class="fig-img fig-ranking-profile-media-small-picture__photo"
                                                     alt="«J’ai été déçue»&nbsp;: Malika Sorel, numéro 2 de la liste RN aux européennes, quitte la délégation du parti nationaliste"
-                                                    height="2001" width="3000"><noscript><img
-                                                        srcset="fc6bc7b5895f5586193595d0a6d8a360addd519ac7010194137bab78d1276a59-1.webp 120w, fc6bc7b5895f5586193595d0a6d8a360addd519ac7010194137bab78d1276a59.webp 224w, fc6bc7b5895f5586193595d0a6d8a360addd519ac7010194137bab78d1276a59-2.webp 282w"
+                                                    height="2001" width="3000">
+                                                    <noscript>
+                                                        <img
+                                                        srcset="./image/fc6bc7b5895f5586193595d0a6d8a360addd519ac7010194137bab78d1276a59-1.webp 120w, ./image/fc6bc7b5895f5586193595d0a6d8a360addd519ac7010194137bab78d1276a59.webp 224w, ./image/fc6bc7b5895f5586193595d0a6d8a360addd519ac7010194137bab78d1276a59-2.webp 282w"
                                                         sizes="(min-width: 64em) 224px, (min-width: 48em) 282px, 120px"
                                                         class="fig-img--complete fig-img fig-ranking-profile-media-small-picture__photo"
                                                         alt="«J’ai été déçue»&nbsp;: Malika Sorel, numéro 2 de la liste RN aux européennes, quitte la délégation du parti nationaliste"
-                                                        height="2001" width="3000"></noscript></div>
+                                                        height="2001" width="3000">
+                                                    </noscript>
+                                                    </div>
                                         </figure>
                                     </div>
                                     <p class="fig-ranking-profile-standfirst">
@@ -1709,16 +1711,20 @@
                                         </svg>
                                         <figure class="fig-ranking-profile-media-small-picture">
                                             <div class="fig-placeholder fig-placeholder--16-9 fig-lazy"><img
-                                                    data-srcset="https://i.f1g.fr/media/cms/120x68_crop/2025/04/20/8a4920e03a7499e5cb56cca992a3cb1b24e22f6521c3387329558a98520339ec.webp 120w, https://i.f1g.fr/media/cms/224x126_crop/2025/04/20/8a4920e03a7499e5cb56cca992a3cb1b24e22f6521c3387329558a98520339ec.webp 224w, https://i.f1g.fr/media/cms/282x159_crop/2025/04/20/8a4920e03a7499e5cb56cca992a3cb1b24e22f6521c3387329558a98520339ec.webp 282w"
+                                                    data-srcset="https://i.f1g.fr/media/cms/120x68_crop/2025/04/20/8a4920e03a7499e5cb56cca992a3cb1b24e22f6521c3387329558a98520339ec.jpg 120w, https://i.f1g.fr/media/cms/224x126_crop/2025/04/20/8a4920e03a7499e5cb56cca992a3cb1b24e22f6521c3387329558a98520339ec.jpg 224w, https://i.f1g.fr/media/cms/282x159_crop/2025/04/20/8a4920e03a7499e5cb56cca992a3cb1b24e22f6521c3387329558a98520339ec.jpg 282w"
                                                     sizes="(min-width: 64em) 224px, (min-width: 48em) 282px, 120px"
                                                     class="fig-img fig-ranking-profile-media-small-picture__photo"
                                                     alt="«Une candidature qui a du sens»&nbsp;: après Paris, Anne Hidalgo lorgne le poste de haut-commissaire de l’ONU pour les réfugiés"
-                                                    height="2000" width="3000"><noscript><img
-                                                        srcset="8a4920e03a7499e5cb56cca992a3cb1b24e22f6521c3387329558a98520339ec.webp 120w, 8a4920e03a7499e5cb56cca992a3cb1b24e22f6521c3387329558a98520339ec-1.webp 224w, 8a4920e03a7499e5cb56cca992a3cb1b24e22f6521c3387329558a98520339ec-2.webp 282w"
+                                                    height="2000" width="3000">
+                                                    <noscript>
+                                                        <img
+                                                        srcset="./image/8a4920e03a7499e5cb56cca992a3cb1b24e22f6521c3387329558a98520339ec.webp 120w, ./image/8a4920e03a7499e5cb56cca992a3cb1b24e22f6521c3387329558a98520339ec-1.webp 224w, ./image/8a4920e03a7499e5cb56cca992a3cb1b24e22f6521c3387329558a98520339ec-2.webp 282w"
                                                         sizes="(min-width: 64em) 224px, (min-width: 48em) 282px, 120px"
                                                         class="fig-img--complete fig-img fig-ranking-profile-media-small-picture__photo"
                                                         alt="«Une candidature qui a du sens»&nbsp;: après Paris, Anne Hidalgo lorgne le poste de haut-commissaire de l’ONU pour les réfugiés"
-                                                        height="2000" width="3000"></noscript></div>
+                                                        height="2000" width="3000">
+                                                    </noscript>
+                                                </div>
                                         </figure>
                                     </div>
                                     <p class="fig-ranking-profile-standfirst">
@@ -1750,17 +1756,22 @@
  fig-premium-mark">De retour à Mayotte, Emmanuel Macron face à ses promesses de reconstruction</h2>
                                         </a>
                                         <figure class="fig-ranking-profile-media-small-picture">
-                                            <div class="fig-placeholder fig-placeholder--16-9 fig-lazy"><img
+                                            <div class="fig-placeholder fig-placeholder--16-9 fig-lazy">
+                                                <img
                                                     data-srcset="https://i.f1g.fr/media/cms/120x68_crop/2025/04/20/a6f1216656bfde13c538d3f1e0215d4cd36341fb0c5e73e27cea7c5a762c3d10.jpg 120w, https://i.f1g.fr/media/cms/224x126_crop/2025/04/20/a6f1216656bfde13c538d3f1e0215d4cd36341fb0c5e73e27cea7c5a762c3d10.jpg 224w, https://i.f1g.fr/media/cms/282x159_crop/2025/04/20/a6f1216656bfde13c538d3f1e0215d4cd36341fb0c5e73e27cea7c5a762c3d10.jpg 282w"
                                                     sizes="(min-width: 64em) 224px, (min-width: 48em) 282px, 120px"
                                                     class="fig-img fig-ranking-profile-media-small-picture__photo"
                                                     alt="De retour à Mayotte, Emmanuel Macron face à ses promesses de reconstruction"
-                                                    height="2001" width="3000"><noscript><img
-                                                        srcset="a6f1216656bfde13c538d3f1e0215d4cd36341fb0c5e73e27cea7c5a762c3d10.webp 120w, a6f1216656bfde13c538d3f1e0215d4cd36341fb0c5e73e27cea7c5a762c3d10-1.webp 224w, a6f1216656bfde13c538d3f1e0215d4cd36341fb0c5e73e27cea7c5a762c3d10-2.webp 282w"
+                                                    height="2001" width="3000">
+                                                    <noscript>
+                                                        <img
+                                                        srcset="./image/a6f1216656bfde13c538d3f1e0215d4cd36341fb0c5e73e27cea7c5a762c3d10.webp 120w,./image/a6f1216656bfde13c538d3f1e0215d4cd36341fb0c5e73e27cea7c5a762c3d10-1.webp 224w, ./image/a6f1216656bfde13c538d3f1e0215d4cd36341fb0c5e73e27cea7c5a762c3d10-2.webp 282w"
                                                         sizes="(min-width: 64em) 224px, (min-width: 48em) 282px, 120px"
                                                         class="fig-img--complete fig-img fig-ranking-profile-media-small-picture__photo"
                                                         alt="De retour à Mayotte, Emmanuel Macron face à ses promesses de reconstruction"
-                                                        height="2001" width="3000"></noscript></div>
+                                                        height="2001" width="3000">
+                                                    </noscript>
+                                                </div>
                                         </figure>
                                         <p class="fig-ranking-profile-standfirst">
                                             <strong>REPORTAGE - </strong>Quatre mois après le passage meurtrier du
@@ -1793,7 +1804,7 @@
                                                     class="fig-img fig-ranking-profile-media-small-picture__photo"
                                                     alt="Guillaume Tabard&nbsp;: «Pour la présidentielle 2027, définir l’après-macronisme, le véritable enjeu»"
                                                     height="1079" width="1918"><noscript><img
-                                                        srcset="4027a892d9c16a7f23322d938f1830d63a28db71462678b6d46f0a45becb4b6f.webp 120w, 4027a892d9c16a7f23322d938f1830d63a28db71462678b6d46f0a45becb4b6f-1.webp 224w, 4027a892d9c16a7f23322d938f1830d63a28db71462678b6d46f0a45becb4b6f-2.webp 282w"
+                                                        srcset="./image/4027a892d9c16a7f23322d938f1830d63a28db71462678b6d46f0a45becb4b6f.webp 120w, ./image/4027a892d9c16a7f23322d938f1830d63a28db71462678b6d46f0a45becb4b6f-1.webp 224w, ./image/4027a892d9c16a7f23322d938f1830d63a28db71462678b6d46f0a45becb4b6f-2.webp 282w"
                                                         sizes="(min-width: 64em) 224px, (min-width: 48em) 282px, 120px"
                                                         class="fig-img--complete fig-img fig-ranking-profile-media-small-picture__photo"
                                                         alt="Guillaume Tabard&nbsp;: «Pour la présidentielle 2027, définir l’après-macronisme, le véritable enjeu»"
@@ -1827,7 +1838,7 @@
                                                     class="fig-img fig-ranking-profile-media-small-picture__photo"
                                                     alt="La sélection du Figaro Live&nbsp;: les vidéos qu’il ne fallait pas rater ce jeudi 17 avril"
                                                     height="406" width="720"><noscript><img
-                                                        srcset="cc965e9590c2697e5b4eeab897a6efc73bad311dc7038eb05002f34bda46b629-1.webp 120w, cc965e9590c2697e5b4eeab897a6efc73bad311dc7038eb05002f34bda46b629.webp 224w, cc965e9590c2697e5b4eeab897a6efc73bad311dc7038eb05002f34bda46b629-2.webp 282w"
+                                                        srcset="./image/cc965e9590c2697e5b4eeab897a6efc73bad311dc7038eb05002f34bda46b629-1.webp 120w, ./image/cc965e9590c2697e5b4eeab897a6efc73bad311dc7038eb05002f34bda46b629.webp 224w, ./image/cc965e9590c2697e5b4eeab897a6efc73bad311dc7038eb05002f34bda46b629-2.webp 282w"
                                                         sizes="(min-width: 64em) 224px, (min-width: 48em) 282px, 120px"
                                                         class="fig-img--complete fig-img fig-ranking-profile-media-small-picture__photo"
                                                         alt="La sélection du Figaro Live&nbsp;: les vidéos qu’il ne fallait pas rater ce jeudi 17 avril"
@@ -1863,7 +1874,7 @@
                                                     class="fig-img fig-ranking-profile-media-small-picture__photo"
                                                     alt="Paulin Césari&nbsp;: «&nbsp;Emmanuel Macron en Égypte, le nouveau phare d’Alexandrie&nbsp;»"
                                                     height="2000" width="3000"><noscript><img
-                                                        srcset="3e98374ee6c3177e1aa9c9c53aa6bbf7313e242cd90f7fb97bd2c976e1734df8.webp 120w, 3e98374ee6c3177e1aa9c9c53aa6bbf7313e242cd90f7fb97bd2c976e1734df8-1.webp 224w, 3e98374ee6c3177e1aa9c9c53aa6bbf7313e242cd90f7fb97bd2c976e1734df8-2.webp 282w"
+                                                        srcset="./image/3e98374ee6c3177e1aa9c9c53aa6bbf7313e242cd90f7fb97bd2c976e1734df8.webp 120w, ./image/3e98374ee6c3177e1aa9c9c53aa6bbf7313e242cd90f7fb97bd2c976e1734df8-1.webp 224w, ./image/3e98374ee6c3177e1aa9c9c53aa6bbf7313e242cd90f7fb97bd2c976e1734df8-2.webp 282w"
                                                         sizes="(min-width: 64em) 224px, (min-width: 48em) 282px, 120px"
                                                         class="fig-img--complete fig-img fig-ranking-profile-media-small-picture__photo"
                                                         alt="Paulin Césari&nbsp;: «&nbsp;Emmanuel Macron en Égypte, le nouveau phare d’Alexandrie&nbsp;»"
@@ -1900,7 +1911,7 @@
                                                     class="fig-img fig-ranking-profile-media-small-picture__photo"
                                                     alt="Guerre en Ukraine&nbsp;: pourquoi Rubio, Witkoff et Iermak se retrouvent à Paris"
                                                     height="2128" width="3000"><noscript><img
-                                                        srcset="7de926ca0763fa8493f2d8205d4e5277911257d79a968ff060bc603bc8c0c5d1.webp 120w, 7de926ca0763fa8493f2d8205d4e5277911257d79a968ff060bc603bc8c0c5d1-1.webp 224w, 7de926ca0763fa8493f2d8205d4e5277911257d79a968ff060bc603bc8c0c5d1-2.webp 282w"
+                                                        srcset="./image/7de926ca0763fa8493f2d8205d4e5277911257d79a968ff060bc603bc8c0c5d1.webp 120w, ./image/7de926ca0763fa8493f2d8205d4e5277911257d79a968ff060bc603bc8c0c5d1-1.webp 224w, ./image/7de926ca0763fa8493f2d8205d4e5277911257d79a968ff060bc603bc8c0c5d1-2.webp 282w"
                                                         sizes="(min-width: 64em) 224px, (min-width: 48em) 282px, 120px"
                                                         class="fig-img--complete fig-img fig-ranking-profile-media-small-picture__photo"
                                                         alt="Guerre en Ukraine&nbsp;: pourquoi Rubio, Witkoff et Iermak se retrouvent à Paris"
@@ -1936,7 +1947,7 @@
                                                     class="fig-img fig-ranking-profile-media-small-picture__photo"
                                                     alt="«Emmanuel Macron garde quelque chose d’insaisissable qui me déroute toujours un peu»&nbsp;: les indiscrétions du Figaro Magazine"
                                                     height="2000" width="3000"><noscript><img
-                                                        srcset="31005863d51c573fe850daaf86761b55024901f6acffa17d73ac40d9598a0f56.webp 120w, 31005863d51c573fe850daaf86761b55024901f6acffa17d73ac40d9598a0f56-1.webp 224w, 31005863d51c573fe850daaf86761b55024901f6acffa17d73ac40d9598a0f56-2.webp 282w"
+                                                        srcset="./image/31005863d51c573fe850daaf86761b55024901f6acffa17d73ac40d9598a0f56.webp 120w, ./image/31005863d51c573fe850daaf86761b55024901f6acffa17d73ac40d9598a0f56-1.webp 224w, ./image/31005863d51c573fe850daaf86761b55024901f6acffa17d73ac40d9598a0f56-2.webp 282w"
                                                         sizes="(min-width: 64em) 224px, (min-width: 48em) 282px, 120px"
                                                         class="fig-img--complete fig-img fig-ranking-profile-media-small-picture__photo"
                                                         alt="«Emmanuel Macron garde quelque chose d’insaisissable qui me déroute toujours un peu»&nbsp;: les indiscrétions du Figaro Magazine"
@@ -1970,7 +1981,7 @@
                                                     class="fig-img fig-ranking-profile-media-small-picture__photo"
                                                     alt="Au Touquet, Laurent Wauquiez défend son projet de rupture avec le macronisme"
                                                     height="1079" width="1918"><noscript><img
-                                                        srcset="a47a0c0d18fc0b249f5957b2cca80a815dcfebb39acaa51811f8b408cb71e277.webp 120w, a47a0c0d18fc0b249f5957b2cca80a815dcfebb39acaa51811f8b408cb71e277-1.webp 224w, a47a0c0d18fc0b249f5957b2cca80a815dcfebb39acaa51811f8b408cb71e277-2.webp 282w"
+                                                        srcset="./image/a47a0c0d18fc0b249f5957b2cca80a815dcfebb39acaa51811f8b408cb71e277.webp 120w, ./image/a47a0c0d18fc0b249f5957b2cca80a815dcfebb39acaa51811f8b408cb71e277-1.webp 224w, ./image/a47a0c0d18fc0b249f5957b2cca80a815dcfebb39acaa51811f8b408cb71e277-2.webp 282w"
                                                         sizes="(min-width: 64em) 224px, (min-width: 48em) 282px, 120px"
                                                         class="fig-img--complete fig-img fig-ranking-profile-media-small-picture__photo"
                                                         alt="Au Touquet, Laurent Wauquiez défend son projet de rupture avec le macronisme"
@@ -2007,7 +2018,7 @@
                                                     class="fig-img fig-ranking-profile-media-small-picture__photo"
                                                     alt="Guillaume Tabard: «Dans la crise avec l’Algérie, les résultats comptent plus que la méthode»"
                                                     height="1687" width="3000"><noscript><img
-                                                        srcset="4a7258b2917c1b9d402df3e8d81b0983c322dd3abe1aca25401d944d319bcbee.webp 120w, 4a7258b2917c1b9d402df3e8d81b0983c322dd3abe1aca25401d944d319bcbee-2.webp 224w, 4a7258b2917c1b9d402df3e8d81b0983c322dd3abe1aca25401d944d319bcbee-1.webp 282w"
+                                                        srcset="./image/4a7258b2917c1b9d402df3e8d81b0983c322dd3abe1aca25401d944d319bcbee.webp 120w,./image/4a7258b2917c1b9d402df3e8d81b0983c322dd3abe1aca25401d944d319bcbee-2.webp 224w, ./image/4a7258b2917c1b9d402df3e8d81b0983c322dd3abe1aca25401d944d319bcbee-1.webp 282w"
                                                         sizes="(min-width: 64em) 224px, (min-width: 48em) 282px, 120px"
                                                         class="fig-img--complete fig-img fig-ranking-profile-media-small-picture__photo"
                                                         alt="Guillaume Tabard: «Dans la crise avec l’Algérie, les résultats comptent plus que la méthode»"
@@ -2043,7 +2054,7 @@
                                                     class="fig-img fig-ranking-profile-media-small-picture__photo"
                                                     alt="Emmanuel Moulin, le choix très politique de Macron pour succéder à Alexis Kohler à l’Élysée"
                                                     height="1543" width="2743"><noscript><img
-                                                        srcset="acc54a12aa80c8e3e3fd909684568616b3cbd00e8f86f9dd5d14cbc992f3f319.webp 120w, acc54a12aa80c8e3e3fd909684568616b3cbd00e8f86f9dd5d14cbc992f3f319-1.webp 224w, acc54a12aa80c8e3e3fd909684568616b3cbd00e8f86f9dd5d14cbc992f3f319-2.webp 282w"
+                                                        srcset="./image/acc54a12aa80c8e3e3fd909684568616b3cbd00e8f86f9dd5d14cbc992f3f319.webp 120w, ./image/acc54a12aa80c8e3e3fd909684568616b3cbd00e8f86f9dd5d14cbc992f3f319-1.webp 224w, ./image/acc54a12aa80c8e3e3fd909684568616b3cbd00e8f86f9dd5d14cbc992f3f319-2.webp 282w"
                                                         sizes="(min-width: 64em) 224px, (min-width: 48em) 282px, 120px"
                                                         class="fig-img--complete fig-img fig-ranking-profile-media-small-picture__photo"
                                                         alt="Emmanuel Moulin, le choix très politique de Macron pour succéder à Alexis Kohler à l’Élysée"
@@ -2082,7 +2093,7 @@
                                                         class="fig-img fig-ranking-profile-media-small-picture__photo"
                                                         alt="«Vous êtes la génération Notre-Dame»&nbsp;: Emmanuel Macron décore les artisans de la reconstruction"
                                                         height="1658" width="2948"><noscript><img
-                                                            srcset="147540d34df1f5194aa8e619adff2b039e0cb3b9e49cfcb1b09eb23d47b6e13d-1.webp 120w, 147540d34df1f5194aa8e619adff2b039e0cb3b9e49cfcb1b09eb23d47b6e13d-2.webp 224w, 147540d34df1f5194aa8e619adff2b039e0cb3b9e49cfcb1b09eb23d47b6e13d.webp 282w"
+                                                            srcset="./image/147540d34df1f5194aa8e619adff2b039e0cb3b9e49cfcb1b09eb23d47b6e13d-1.webp 120w, ./image/147540d34df1f5194aa8e619adff2b039e0cb3b9e49cfcb1b09eb23d47b6e13d-2.webp 224w, ./image/147540d34df1f5194aa8e619adff2b039e0cb3b9e49cfcb1b09eb23d47b6e13d.webp 282w"
                                                             sizes="(min-width: 64em) 224px, (min-width: 48em) 282px, 120px"
                                                             class="fig-img--complete fig-img fig-ranking-profile-media-small-picture__photo"
                                                             alt="«Vous êtes la génération Notre-Dame»&nbsp;: Emmanuel Macron décore les artisans de la reconstruction"
@@ -2231,7 +2242,7 @@
                                     data-mrf-link="https://tvmag.lefigaro.fr/programme-tv/miss-france"
                                     cmp-ltrk="seo-footer" cmp-ltrk-idx="13"
                                     mrfobservableid="6eda7ff1-533c-4646-b19c-9a82aca2eeb6">Election et photos Miss
-                                    france 2024</a>
+                                    France 2024</a>
                             </li>
                             <li class="fig-seo-footer__list-item">
                                 <a href="https://tvmag.lefigaro.fr/programme-tv/programme-canalsat"
@@ -2341,7 +2352,7 @@
                                     data-mrf-link="https://www.lefigaro.fr/sports/football/dossier/ballon-d-or-palmares-resultats-classement-complet"
                                     cmp-ltrk="seo-footer" cmp-ltrk-idx="28"
                                     mrfobservableid="7b2112ee-0b6b-4d8f-a17b-309148e58a23">Ballon d'Or France
-                                    football</a>
+                                    Football</a>
                             </li>
                         </ul>
                     </div>
@@ -2687,7 +2698,7 @@
                                 <a href="https://www.lefigaro.fr/histoire" class="fig-seo-footer__link"
                                     data-mrf-link="https://www.lefigaro.fr/histoire" cmp-ltrk="seo-footer"
                                     cmp-ltrk-idx="73" mrfobservableid="ef680c07-5d6f-4604-9268-981f8e2d6a29">Histoire de
-                                    france</a>
+                                    France</a>
                             </li>
                             <li class="fig-seo-footer__list-item">
                                 <a href="https://www.lefigaro.fr/langue-francaise" class="fig-seo-footer__link"
@@ -3030,7 +3041,7 @@
                     </div>
                     <div class="fig-seo-footer__list-container">
                         <div class="fig-seo-footer__subtitle" id="seo-footer-10624" tabindex="0">Les magazines
-                            figaro<svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" aria-hidden="true"
+                            Figaro<svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" aria-hidden="true"
                                 viewBox="0 0 10 12" focusable="false">
                                 <use href="#fig-svg__bracket"></use>
                             </svg>
@@ -3046,13 +3057,13 @@
                                 <a href="http://kiosque.lefigaro.fr/figaro-madame" class="fig-seo-footer__link"
                                     data-mrf-link="http://kiosque.lefigaro.fr/figaro-madame" cmp-ltrk="seo-footer"
                                     cmp-ltrk-idx="118" mrfobservableid="cda4d716-bf4e-41ad-85b3-b96f2954be0a">Madame
-                                    figaro</a>
+                                    Figaro</a>
                             </li>
                             <li class="fig-seo-footer__list-item">
                                 <a href="http://kiosque.lefigaro.fr/le-figaro" class="fig-seo-footer__link"
                                     data-mrf-link="http://kiosque.lefigaro.fr/le-figaro" cmp-ltrk="seo-footer"
                                     cmp-ltrk-idx="119" mrfobservableid="fe6721c6-04ba-4aec-a78d-73fac70d7575">Le
-                                    figaro</a>
+                                    Figaro</a>
                             </li>
                             <li class="fig-seo-footer__list-item">
                                 <a href="http://kiosque.lefigaro.fr/figaro-hors-serie" class="fig-seo-footer__link"
@@ -3511,10 +3522,10 @@
                         mrfobservableid="faa335af-a4e3-4f6e-8a4a-b49d8e7feacb">
                         <div class="fig-lazy fig-placeholder fig-placeholder--square fig-app-banner__logo">
                             <noscript class="fig-img__noscript">
-                                <img srcset="logo-fig-app-banner.0.8ad37e5b7820294c.svg" alt="" aria-hidden="true"
+                                <img srcset="./assets/logo-fig-app-banner.0.8ad37e5b7820294c.svg" alt="" aria-hidden="true"
                                     width="40px" height="40px" class="fig-img--complete fig-img" loading="lazy">
                             </noscript>
-                            <img srcset="62b9cf941e59b07f90366020cdd5e83804c64be9.svg"
+                            <img srcset="./assets/62b9cf941e59b07f90366020cdd5e83804c64be9.svg"
                                 data-srcset="/build/modern/images/logo-fig-app-banner.0.8ad37e5b7820294c.svg" alt=""
                                 aria-hidden="true" width="40px" height="40px" class="fig-img--complete fig-img">
 
@@ -3687,7 +3698,7 @@
                                             d="M2.6 4L.3 1.7A.5.5 0 111 1l2.7 2.6c.2.2.2.6 0 .8L1 7a.5.5 0 01-.7-.7L2.6 4z">
                                         </path>
                                     </svg>
-                                    figaro Store</a></li>
+                                    Figaro Store</a></li>
                             <li class="fh-ft__useful-item"><a class="fh-ft__lk" href="https://jeux.lefigaro.fr/"><svg
                                         class="fh-ft__useful-svg" width="4" height="8" viewBox="0 0 4 8"
                                         xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -3771,7 +3782,7 @@
                                             d="M11.321 13.2059c.2891.0511 1.0939.4766 1.4434.7612.9488.7731 1.9633 1.9622 1.9633 1.9622l.4427.2765s-1.2288-1.4745-2.0188-2.2678c-.5507-.553-1.4787-1.4888-1.4787-1.4888l-.0494-.0526h-.3025v.8093ZM7.14578 7.11919a38.80732 38.80732 0 0 1-.2891-.21858C4.72495 5.27641 4.01544 4.4053 3.83012 3.82812c0 0-.65128 2.3567 1.0911 4.23467 0 0-.42218-.0885-.82707-.24807 0 0 .72188 1.80724 2.69264 2.76398 0 0-.51043.0178-.95061-.0355 0 0 .46665.7129 1.85462 1.4347.49066.2552 1.0957.5111 1.83663.7372v-2.5892c.00035 0-.02401-1.24106-2.38165-3.00671Z"
                                             fill="#0D6FEF"></path>
                                     </svg><span class="fh-ft__txt"><span class="fh-ft__mobileapp-name">Le
-                                            figaro&nbsp;:</span> iPhone | Android</span></a></li>
+                                            Figaro&nbsp;:</span> iPhone | Android</span></a></li>
                             <li class="fh-ft__li"><a class="fh-ft__lk" href="https://app.adjust.com/x2lh6rn"
                                     target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 20 20"
                                         fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -3898,7 +3909,7 @@
                                             </clipPath>
                                         </defs>
                                     </svg><span class="fh-ft__txt"><span class="fh-ft__mobileapp-name">Le Kiosque Le
-                                            figaro&nbsp;:</span> iPhone | Android</span></a></li>
+                                            Figaro&nbsp;:</span> iPhone | Android</span></a></li>
                             <li class="fh-ft__li"><a class="fh-ft__lk" href="https://app.adjust.com/5blsqmr"><svg
                                         width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -4060,7 +4071,7 @@
                 <li class="fh-ft__mandatory-item"><a href="https://mentions-legales.lefigaro.fr/page/mentions-legales"
                         class="fh-ft__lk">Mentions légales</a></li>
                 <li class="fh-ft__mandatory-item"><a href="https://www.groupefigaro.com/" class="fh-ft__lk">Groupe
-                        figaro</a></li>
+                        Figaro</a></li>
                 <li class="fh-ft__mandatory-item"><a
                         href="https://boutique.lefigaro.fr/rayon/4-abonnement?ga_source=footer_figaro&amp;app=Figaro&amp;source=footer"
                         class="fh-ft__lk">Abonnements</a></li>
@@ -4083,8 +4094,8 @@
         id="fig-ad-script" data-activate-fff-inarticle-infinite="false" data-activate-fff-pave-infinite="false"
         data-is-arbitrage="false" data-mrf-recirculation="fig-ad-script"></div>
     <noscript>
-        <img srcset="unip.gif" data-srcset="https://trc.taboola.com/1028379/log/3/unip?en=page_view" alt=""
-            aria-hidden="true" height="0" style="display:none" src="unip.gif" width="0" class="fig-img">
+        <img srcset="./assets/gif/unip.gif" data-srcset="https://trc.taboola.com/1028379/log/3/unip?en=page_view" alt=""
+            aria-hidden="true" height="0" style="display:none" src="./assets/gif/unip.gif" width="0" class="fig-img">
     </noscript>
 
     <iframe name="__tcfapiLocator" style="display: none;" src="/templates/index_1.html"></iframe><iframe
@@ -4114,8 +4125,11 @@
                 </div>
             </div>
         </div>
-    </div><iframe id="trc-pixel-iframe-2638" name="trc-pixel-iframe-2638" width="0px" height="0px" class="trc-hidden"
+    </div>
+    <iframe id="trc-pixel-iframe-2638" name="trc-pixel-iframe-2638" width="0px" height="0px" class="trc-hidden"
         style="display: none;" src="/templates/index_6.html"></iframe>
+
+    <script src="script.js"></script>
 </body>
 <iframe sandbox="allow-scripts allow-same-origin" id="46d881c219da5ba" frameborder="0" allowtransparency="true"
     marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0"
