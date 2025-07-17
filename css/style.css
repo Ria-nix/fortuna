@@ -4,7 +4,8 @@
     font-style: normal;
     font-weight: 400;
     src: local("Source Sans Pro Regular"), local("SourceSansPro-Regular"),
-        url("../fonts/sourcesanspro/sourcesanspro-regular.woff2") format("woff2"),
+        url("../fonts/sourcesanspro/sourcesanspro-regular.woff2")
+            format("woff2"),
         url("../fonts/sourcesanspro/sourcesanspro-regular.woff") format("woff");
 }
 
@@ -75,7 +76,8 @@
     font-style: normal;
     font-weight: 400;
     src: local("Source Sans Pro"), local("SourceSansPro"),
-        url("../fonts/sourcesanspro/sourcesanspro-regular.woff2") format("woff2"),
+        url("../fonts/sourcesanspro/sourcesanspro-regular.woff2")
+            format("woff2"),
         url("../fonts/sourcesanspro/sourcesanspro-regular.woff") format("woff");
 }
 
@@ -122,7 +124,6 @@
         url("../fonts/fig/fig-premium-mark.woff2") format("woff2"),
         url("../fonts/fig/fig-premium-mark.woff") format("woff");
 }
-
 
 a,
 article,
@@ -185,8 +186,8 @@ a img {
 html {
     box-sizing: border-box;
     color: #163860;
-    font-family: 'noto-serif', 'Georgia', 'Verdana', 'Times', 'Times New Roman', 'Garamond',
-        'Palatino', serif;
+    font-family: "noto-serif", "Georgia", "Verdana", "Times", "Times New Roman",
+        "Garamond", "Palatino", serif;
     font-size: 16px;
     scroll-behavior: smooth;
 }
@@ -3632,7 +3633,6 @@ img[srcset].fig-img--complete {
 }
 
 @media (max-width: 47.99em) {
-
     #fh .fh-sub-rubrics__list {
         padding: 0 40px 32px;
     }
@@ -5593,10 +5593,10 @@ body > img {
     position: relative;
 }
 
-.fig-item{
+.fig-item {
     line-height: 150%;
 }
-.fig-wrap-img{
+.fig-wrap-img {
     width: 100%;
 }
 
