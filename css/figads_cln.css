@@ -1,9 +1,0 @@
-body > img,
-._zbo_tag {
-    clip-path: inset(0px);
-    overflow: hidden;
-    position: absolute;
-    height: 1px;
-    width: 1px;
-    margin: -1px;
-}
